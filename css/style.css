@@ -1,13 +1,14 @@
 /* Reset */
 * {
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 /* Main Styling */
-html,body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7em;
 }
 
@@ -16,16 +17,16 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   padding-bottom: 20px;
 }
-
-
 
 /* Utility Classes */
 .container {
   margin: auto;
-  max-width: 1800px;
+  max-width: 98%;
   overflow: auto;
   padding: 0 20px;
 }
@@ -82,13 +83,19 @@ h1, h2, h3 {
 }
 
 /* Padding */
-.py-1 { padding: 10px 0; }
-.py-2 { padding: 20px 0; }
-.py-3 { padding: 30px 0; }
+.py-1 {
+  padding: 10px 0;
+}
+.py-2 {
+  padding: 20px 0;
+}
+.py-3 {
+  padding: 30px 0;
+}
 
 /* Navbar */
 #navbar {
-  background: #333;
+  background: #aaf4f7;
   color: #fff;
   overflow: auto;
 }
@@ -117,50 +124,17 @@ h1, h2, h3 {
   text-align: center;
 }
 
-#navbar ul li a:hover, 
+#navbar ul li a:hover,
 #navbar ul li a.current {
-  background: #444;
-  color: #f7c08a;
+  background: #aaf4f7;
+  color: #2b6b6e;
 }
 
-/* Showcase */
-#showcase {
-  background: url('../img/showcase.jpg') no-repeat center center/cover;
+/* Content */
+#content {
+  background: #aaf4f7;
+  /* background: url("../img/showcase.jpg") no-repeat center center/cover; */
   /* height: 600px; */
-}
-
-
-
-#showcase .showcase-content h1 {
-  font-size: 60px;
-  line-height: 1.2em;
-}
-
-
-
-/* Home Info */
-#home-info {
-  height: 400px;
-}
-
-#home-info .info-img {
-  float: left;
-  width: 50%;
-  background: url('../img/photo-1.jpg') no-repeat;
-  min-height: 100%;
-}
-
-#home-info .info-content {
-  float: right;
-  width: 50%;
-  height: 100%;
-  text-align: center;
-  padding: 50px 30px;
-  overflow: hidden;
-}
-
-#home-info .info-content p {
-  padding-bottom: 30px;
 }
 
 /* Features */
@@ -168,58 +142,11 @@ h1, h2, h3 {
   float: left;
   width: 33.3%;
   padding: 50px;
-  text-align:center;
+  text-align: center;
 }
 
 .box i {
   margin-bottom: 10px;
-}
-
-/* About Info */
-#about-info .info-right {
-  float: right;
-  width: 50%;
-  min-height: 100%;
-}
-
-#about-info .info-right img {
-  display: block;
-  margin: auto;
-  width: 70%;
-  border-radius: 50%;
-}
-
-#about-info .info-left {
-  float: left;
-  width: 50%;
-  min-height: 100%;
-}
-
-/* Testimonials */
-#testimonials {
-  height: 600px;
-  background: url('../img/test-bg.jpg') no-repeat center center/cover;
-  padding-top: 100px;
-}
-
-#testimonials h2 {
-  color: #fff;
-  text-align: center;
-  padding-bottom: 40px;
-}
-
-#testimonials .testimonial {
-  padding: 20px;
-  margin-bottom: 40px;
-  border-radius: 5px;
-  opacity: 0.9;
-}
-
-#testimonials .testimonial img {
-  width: 100px;
-  float: left;
-  margin-right: 20px;
-  border-radius: 50%;
 }
 
 /* Contact Form */
@@ -232,7 +159,7 @@ h1, h2, h3 {
   margin-bottom: 5px;
 }
 
-#contact-form input, 
+#contact-form input,
 #contact-form textarea {
   width: 100%;
   padding: 10px;
@@ -243,7 +170,7 @@ h1, h2, h3 {
   height: 200px;
 }
 
-#contact-form input:focus, 
+#contact-form input:focus,
 #contact-form textarea:focus {
   outline: none;
   border-color: #f7c08a;
@@ -257,60 +184,71 @@ h1, h2, h3 {
   padding: 20px;
 }
 
-.jounal {
+/* Journal */
+
+.journal-search {
+}
+
+.journal-search-tag-list {
   display: flex;
-  height: 216px;
+  gap: 0.5rem;
+}
+
+.journal-search-tags {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.journal {
+  display: flex;
+  gap: 0.5rem;
+  height: 220px;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
   background-color: #fff;
 }
 
-.jounal-image{
-  width: 1000px;
+.journal-images {
+  width: 55%;
   display: flex;
   gap: 0.5rem;
 }
 
-
-.jounal img {
-  width:(177 * 1.5)px;
-  height:(100 * 1.5)px;
+.journal-image {
+  width: 50%;
   border: 1px solid black;
 }
 
-.jounal-tag  {
+.journal-text {
+  width: 45%;
+  padding: 0 0.5rem;
+}
+
+.journal-text-meta {
   display: flex;
   gap: 0.5rem;
 }
 
-.jounal-tag p {
-  color:blue ;
+.journal-text-tag {
+  display: flex;
+  gap: 0.5rem;
+  color: blue;
 }
 
-.jounal-text {
-  width: 600px;
-  padding: 0.5rem;
+.journal-text-desc {
+  text-align: left;
+  overflow-wrap: anywhere;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  color: black;
+  margin: 0px 0;
 }
-.jounal-action{
-  width: 200px;
+
+.journal-action {
+  width: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.jounal-meta {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.jounal-desc{
-  color:black ;
-  margin: 0px 0;
-}
-
-.jounal-desc p{
-  text-align: left;
-  overflow-wrap: anywhere;
-}
-
-

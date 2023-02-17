@@ -1,165 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Welcome to the most extraordinary hotel in Boston Massachusetts">
-  <meta name="keywords" content="hotel,boston hotel,new england hotel">
-  <link rel="icon" href="img/favicon.ico" id="favicon">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Screen Shot Journal</title>
-</head>
-<body>
-  <header>
-    <nav id="navbar">
-      <div class="container">
-        <h1 class="logo"><a href="index.html">Screen Shot Journal</a></h1>
-        <ul>
-          <li><a class="current" href="index.html">Home</a></li>
-          <li><a href="add_jounal.html">Add Journal</a></li>
-          <li><a href="manage_tag.html">Manage Tag</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-
-  <div id="showcase">
-    <div class="container">
-      <div class="showcase-content">
-        <div class="tmp">
-          <a class="text-primary" href="about.html">About</a>
-          <a class="text-primary" href="show_jounal.html">Show Journal</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Welcome to the most extraordinary hotel in Boston Massachusetts"
+    />
+    <meta name="keywords" content="hotel,boston hotel,new england hotel" />
+    <link rel="icon" href="img/favicon.ico" id="favicon" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Screen Shot Journal</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="container">
+          <h1 class="logo"><a href="index.html">Screen Shot Journal</a></h1>
+          <ul>
+            <li><a class="current" href="index.html">Home</a></li>
+            <li><a href="add_journal.html">Add Journal</a></li>
+            <li><a href="manage_tag.html">Manage Tag</a></li>
+          </ul>
         </div>
+      </nav>
+    </header>
 
-        <div class="jounal-list">
-
-          <!-- jounal 1 -->
-          <div class="jounal">
-            <div class="jounal-image">
-              <img class="fit-picture"
-              src="./img/trade_1.png"
-              alt="Grapefruit slice atop a pile of other slices">
-              <img class="fit-picture"
-              src="./img/trade_2.png"
-              alt="Grapefruit slice atop a pile of other slices">
-              <!-- <img class="fit-picture"
+    <div id="content">
+      <div class="container">
+        <div class="journal-search">
+          <div>
+            <label
+              >Search:
+              <input type="text" name="" dirname="fruit.dir" value="" />
+            </label>
+            <input type="submit" />
+          </div>
+          <div class="journal-search-tag-list">
+            Tag list:
+            <div class="journal-search-tags">
+              <p>CTM</p>
+              <p>F in F</p>
+            </div>
+          </div>
+        </div>
+        <div class="journal-list">
+          <!-- journal 1 -->
+          <div class="journal">
+            <div class="journal-images">
+              <img
+                class="journal-image"
+                src="./img/trade_1.png"
+                alt="Grapefruit slice atop a pile of other slices"
+              />
+              <img
+                class="journal-image"
+                src="./img/trade_2.png"
+                alt="Grapefruit slice atop a pile of other slices"
+              />
+              <!-- <img class="journal-image"
               src="./img/trade_3.png"
               alt="Grapefruit slice atop a pile of other slices">
-              <img class="fit-picture"
+              <img class="journal-image"
               src="./img/trade_4.png"
               alt="Grapefruit slice atop a pile of other slices"> -->
             </div>
 
-            <div class="jounal-text">
-              <div class="jounal-meta">
-              <div class="jounal-date">
-              <p>2023/02/09 18:29</p>
-              </div>
-              <div class="jounal-owner">
-              <p>自己</p>
-              </div>
-              <div class="jounal-win">
-              <p>勝ち</p>
-              </div>
+            <div class="journal-text">
+              <div class="journal-text-meta">
+                <div class="journal-text-date">2023/02/09 18:29</div>
+                <div class="journal-text-owner">自己</div>
+                <div class="journal-text-win">勝ち</div>
               </div>
 
-              <div class="jounal-tag">
-              <p>CMT</p>
-              <p>ビルドアップ</p>
-              <p>F in F</p>
+              <div class="journal-text-tag">
+                <p>CMT</p>
+                <p>ビルドアップ</p>
+                <p>F in F</p>
               </div>
-              <div class="jounal-desc">
-              <p>aaaaaaaaaaaaaaaaaaaaaaaaaｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄｄaaaaaaaaaaaaaaaaaadddddddddddddddddddddddd</p>
+              <div class="journal-text-desc">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letraset sheets containing Lorem Ipsum
+                  passages, and
+                </p>
               </div>
             </div>
 
-            <div class="jounal-action">
-              <a href="http://">詳細</a>
-            </div>
-          </div>
-
-          <!-- jounal 2 -->
-          <div class="jounal">
-            <div class="jounal-image">
-              <img class="fit-picture"
-              src="./img/trade_5.png"
-              alt="Grapefruit slice atop a pile of other slices">
-            </div>
-
-            <div class="jounal-text">
-              <div class="jounal-meta">
-              <div class="jounal-date">
-              <p>2020/02/02</p>
-              </div>
-              <div class="jounal-owner">
-              <p>他己</p>
-              </div>
-              <div class="jounal-win">
-              <p>勝ち</p>
-              </div>
-              </div>
-
-              <div class="jounal-tag">
-              <p>CMT</p>
-              <p>ビルドアップ</p>
-              <p>F in F</p>
-              </div>
-              <div class="jounal-desc">
-              <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadddddddddddddddddddddddd</p>
-              </div>
-            </div>
-
-            <div class="jounal-action">
-              <a href="http://">詳細</a>
+            <div class="journal-action">
+              <a href="show_journal.html">詳細</a>
             </div>
           </div>
 
-          <!-- jounal 3 -->
-          <div class="jounal">
-            <div class="jounal-image">
-              <img class="fit-picture"
-              src="./img/trade_6.png"
+          <!-- journal 2 -->
+          <div class="journal">
+            <div class="journal-images">
+              <img
+                class="journal-image"
+                src="./img/trade_1.png"
+                alt="Grapefruit slice atop a pile of other slices"
+              />
+              <img
+                class="journal-image"
+                src="./img/trade_2.png"
+                alt="Grapefruit slice atop a pile of other slices"
+              />
+              <!-- <img class="journal-image"
+              src="./img/trade_3.png"
               alt="Grapefruit slice atop a pile of other slices">
-              <img class="fit-picture"
-              src="./img/trade_7.png"
-              alt="Grapefruit slice atop a pile of other slices">
+              <img class="journal-image"
+              src="./img/trade_4.png"
+              alt="Grapefruit slice atop a pile of other slices"> -->
             </div>
 
-            <div class="jounal-text">
-              <div class="jounal-meta">
-              <div class="jounal-date">
-              <p>2020/02/02</p>
-              </div>
-              <div class="jounal-owner">
-              <p>自己</p>
-              </div>
-              <div class="jounal-win">
-              <p>勝ち</p>
-              </div>
+            <div class="journal-text">
+              <div class="journal-text-meta">
+                <div class="journal-text-date">2023/02/09 18:29</div>
+                <div class="journal-text-owner">自己</div>
+                <div class="journal-text-win">勝ち</div>
               </div>
 
-              <div class="jounal-tag">
-              <p>CMT</p>
-              <p>ビルドアップ</p>
-              <p>F in F</p>
+              <div class="journal-text-tag">
+                <p>CMT</p>
+                <p>ビルドアップ</p>
+                <p>F in F</p>
               </div>
-              <div class="jounal-desc">
-              <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadddddddddddddddddddddddd</p>
+              <div class="journal-text-desc">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letraset sheets containing Lorem Ipsum
+                  passages, and
+                </p>
               </div>
             </div>
 
-            <div class="jounal-action">
-              <a href="http://">詳細</a>
+            <div class="journal-action">
+              <a href="show_journal.html">詳細</a>
+            </div>
+          </div>
+
+          <!-- journal 3 -->
+          <div class="journal">
+            <div class="journal-images">
+              <img
+                class="journal-image"
+                src="./img/trade_1.png"
+                alt="Grapefruit slice atop a pile of other slices"
+              />
+              <img
+                class="journal-image"
+                src="./img/trade_2.png"
+                alt="Grapefruit slice atop a pile of other slices"
+              />
+              <!-- <img class="journal-image"
+              src="./img/trade_3.png"
+              alt="Grapefruit slice atop a pile of other slices">
+              <img class="journal-image"
+              src="./img/trade_4.png"
+              alt="Grapefruit slice atop a pile of other slices"> -->
+            </div>
+
+            <div class="journal-text">
+              <div class="journal-text-meta">
+                <div class="journal-text-date">2023/02/09 18:29</div>
+                <div class="journal-text-owner">自己</div>
+                <div class="journal-text-win">勝ち</div>
+              </div>
+
+              <div class="journal-text-tag">
+                <p>CMT</p>
+                <p>ビルドアップ</p>
+                <p>F in F</p>
+              </div>
+              <div class="journal-text-desc">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letraset sheets containing Lorem Ipsum
+                  passages, and
+                </p>
+              </div>
+            </div>
+
+            <div class="journal-action">
+              <a href="show_journal.html">詳細</a>
             </div>
           </div>
         </div>
-
       </div>
     </div>
-  </div>
-
-</body>
+  </body>
 </html>
